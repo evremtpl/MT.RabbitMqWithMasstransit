@@ -17,7 +17,7 @@ namespace MT.RabbitMq
 
         }
         public static BusConfigurator Instance=> _Instance.Value;
-        public static IBusControl ConfigureBus(IServiceProvider provider, Action<IRabbitMqBusFactoryConfigurator, IRabbitMqHost>
+        public  IBusControl ConfigureBus( Action<IRabbitMqBusFactoryConfigurator, IRabbitMqHost>
   registrationAction = null)
         {
             return Bus.Factory.CreateUsingRabbitMq(cfg =>
