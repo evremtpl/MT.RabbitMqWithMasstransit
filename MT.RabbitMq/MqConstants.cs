@@ -10,10 +10,10 @@ namespace MT.RabbitMq
 {
     public class MqConstants
     {
-        public static string RabbitMqUri => ConfigurationManager.AppSettings["RabbitMqUri"]; // "rabbitmq://localhost/";
+        public const string RabbitMqUri = "rabbitmq://localhost/";
+        public const string UserName = "guest";
+        public const string Password = "guest";
+        public const string OrderQueue = "m-order-queue";
 
-        public static string UserName  => ConfigurationManager.AppSettings["RabbitMqUserName"];// "guest";
-        public static string Password  => ConfigurationManager.AppSettings["RabbitMqPassword"]; // "guest";
-      
     }
 }
